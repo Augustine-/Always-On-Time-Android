@@ -1,0 +1,41 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0084AB"
+    tools:context=".AlarmListActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:keepScreenOn="true"
+        android:textColor="#33b5e5"
+        android:textStyle="bold"
+        android:textSize="45sp"
+        android:gravity="center"
+        android:background="#0084AB"
+        android:layout_marginTop="50dp"
+        android:text="@string/title" />
+    <TextView android:id="@+id/clock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#33b5e5"
+        android:textSize="75sp"
+        android:layout_marginTop="140dp"
+        android:gravity="center"
+        android:text="00:00:00"
+        />
+    <Button
+        android:id="@+id/button_set_alarm"
+        android:layout_width="125dp"
+        android:layout_height="57dp"
+        android:text="@string/button_set_alarm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="275dp"
+        android:background="@drawable/set_alarm_bordered_button"
+        android:padding="10dp" />
+</RelativeLayout>
